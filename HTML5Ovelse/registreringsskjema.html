@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Registreringsskjema</title>
+    </head>
+    <body>
+        <header>
+            <h1>Registreringsskjema</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Hjem</a>
+                </li>
+                <li>
+                    <a href="inde.html">Valideringsoppgave</a>
+                </li>
+                <li>
+                    <a href="nettsidemal.html">Nettsidemal</a>
+                </li>
+                <li>
+                    <a href="KontaktOss.html">Kontakt oss</a>
+                </li>
+            </ul>
+                
+        </nav>
+        <main>
+        <section>
+            <form method="post">
+                <label>
+                    Navn
+                    <input type="text" name="Navn" placeholder="ola Nordmann" minlength="2" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                </label>
+                <label>
+                    epost
+                    <input type="email" name="E-post" placeholder="Brukernavn@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" maxlength="45" required>
+                </label>
+                <label>
+                    Passord
+                    <input type="password" name="Passord" minlength="8" required>
+                </label>
+                <label>
+                    Alder
+                    <input type="number" placeholder="19" min="18" max="99" required>
+                </label>
+                <label>
+                    Telefonnummer
+                    <input type="tel" pattern="[0-9]{8,12}" required>
+                </label>
+                <label>
+                    fødselsdato
+                    <input type="date" max="2023-12-31" required>
+                </label>
+                <label>
+                    Mann
+                    <input type="radio" name="valg" required>
+                </label>
+                <label>
+                    kvinne
+                    <input type="radio" name="valg" required>
+                </label>
+                <label>
+                    Annet
+                    <input type="radio" name="valg" required>
+                </label>
+                <label>
+                    land
+                    <select name="lan" required>
+                    <option value="norge">Norge</option>
+                    <option value="svergie">Svergie</option>
+                    <option value="danmark">Danamrk</option>
+                    </select>
+                 </label>
+            <label>
+                Personvern
+                <input type="radio" name="persvern" required>
+            </label>
+            <label>
+                <input type="submit" value="Send inn skjema">
+            </label>
+            </form>
+        </section>
+    </main>
+        <aside>
+         
+            </aside>
+        <footer>
+            julie stordal epost: julieast@hiof.no
+        </footer>
+    </body>
+</html>
