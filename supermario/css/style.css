@@ -1,0 +1,94 @@
+main{
+    background-image: url('../sprites/bakgrunn.jpg');
+    background-size: contain;
+    height: 500px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0% auto;
+    position: relative;
+}
+@keyframes runningmario {
+    from{background-image: url('../sprites/staa.png');}
+    to{ background-image: url('../sprites/lopende.png');}
+}
+@keyframes movingmario{
+    0%{
+        left: 0;
+        bottom: 53;
+    }
+    20%{
+        left: 410px;
+        bottom: 53;
+    }
+    40%{
+        left: 410px;
+        bottom: 117px;
+    }
+    50%{
+        left: 407px;
+        bottom: 117px;
+    }
+    60%{
+        left: 574px;
+        bottom: 53px;
+    }
+    70%{
+        bottom: 200px;
+    }
+    100%{
+        left: 800px;
+        bottom: 53px;
+    }
+}
+@keyframes mariodies{
+    0%{
+        background-image: url('../sprites/dead.png');
+        bottom: 53px;
+        left: 800;
+        transform: rotate(0deg), scale(1);
+    }
+    100%{
+        bottom: 150px;
+        transform: rotate(-45deg), scale(1.8);
+        background-image: url('../sprites/dead.png');
+    }
+}
+
+@keyframes runninggompa {
+    from {background-image: url('../sprites/sopp.png'); }
+    to {background-image: url('../sprites/sopp-kopi.png');}
+    
+}
+@keyframes movinggompa{
+    from{right: 0;}
+    to{right: 347px;}
+}
+
+
+#supermario{
+   /* background-image: url('../sprites/staa.png');*/
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 53px;
+    animation-name: runningmario, movingmario, mariodies;
+    animation-iteration-count: infinite, 1, 1;
+    animation-duration: 0.5s, 3s, 0.8s;
+    animation-fill-mode: none, forwards, forwards;
+    animation-delay: 0s, 0s, 3s;
+    z-index: 999;
+}
+#gompa{
+    /*background-image: url('../sprites/sopp.png');*/
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 53px;
+    right: 0;
+    animation-name: runninggompa, movinggompa;
+    animation-iteration-count: infinite, infinite;
+    animation-duration: 0.5s, 1s;
+    animation-direction: normal, alternate;
+}

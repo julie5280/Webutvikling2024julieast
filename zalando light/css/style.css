@@ -44,3 +44,11 @@ img{
 #outlet{
     color: #ff0000;
 }
+
+article
+max-width: 350px
+min-width: 200px
+width: 100%
+box-shadow: 13px,9px , 20px, 0px, # efefef
+border-radius: 4px
+padding:1rem
