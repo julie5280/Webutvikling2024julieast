@@ -1,0 +1,156 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0ece9;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    grid-template-rows: auto auto auto;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+header{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+nav{
+
+}
+ul{
+    display: flex;
+    flex-direction: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    
+  
+}
+ul a {
+    color: black;
+    text-decoration: none;
+}
+
+main{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#mansory-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 0.4rem;
+}
+
+span{
+    
+    background-color: white;
+    padding: 1rem;
+    margin:1rem ;
+    border-radius: 100%;
+}
+span a {
+    color: black;
+    text-decoration: none;
+}
+
+
+h2{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#natur, #science, #animal, #tech, #culture, #history, #geo, #food{
+    padding:3rem;
+    border-radius: 10px;
+}
+
+#natur{
+        background-color: hsl(146, 52%, 72%);
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #science{
+        background-color:hsl(0, 0%, 100%);
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    #animal{
+        background-color: hsl(337, 52%, 72%);
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 2;
+
+    }
+    #tech{
+        background-color: hsl(204, 52%, 72%);
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 3;
+
+    }
+    #culture{
+        background-color: hsl(271, 52%, 72%);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+
+
+    }
+    #history{
+        background-color: hsl(8, 52%, 72%);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 4;
+
+    }
+    #geo{
+        background-color: hsl(168, 52%, 72%);
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    #food{
+        background-color: hsl(30, 52%, 72%);
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    footer{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        align-content: center;
+        align-items: center;
+    }
