@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="css/style.css" >
     </head>
     <body>
-        <header>
+        <div id="grid-container">
+        <header id="global-header">
             <img id="main-logo" src="img/zalandologo.png" alt="Nettsted logo">
             <nav class="flex-space-b">
                 <ul class="flex-menu">
@@ -33,7 +34,7 @@
                         <a href="#">Designer</a>
                     </li>
                     <li>
-                        <a href="#">Outlet</a>
+                        <a href="#" id="outlet">Outlet</a>
                     </li>
                 </ul>
                 <form>
@@ -43,6 +44,20 @@
                 </form>
             </nav>
         </header>
+        <aside id="category-menu">
+            <nav>
+                <ul>
+                    <li>sko
+                        <ul>
+                            <li>sandaler</li>
+                            <li>pumps</li>
+                            <li>høye hæler</li>
+                            <li>joggesko</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
         <main>
             <nav>
                 <ul>
@@ -51,20 +66,6 @@
                 </ul>
             </nav>
             <h1>Sko til dame</h1>
-            <aside>
-                <nav>
-                    <ul>
-                        <li>sko
-                            <ul>
-                                <li>sandaler</li>
-                                <li>pumps</li>
-                                <li>høye hæler</li>
-                                <li>joggesko</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </aside>
             <section>
                 <h2>Produkter</h2>
                 <form>
@@ -81,56 +82,56 @@
                         <option value="high">Høyest pris</option>
                     </select>
                 </form>
-                <section>
-                    <article>
+                <section class="flex-space-b">
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="Fila orbit joggesko">
                         <a href="#">Fila</a>
                         <a href="#"><h3>Orbit - joggesko - white</h3></a>
                         <p>499 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="Fila orbit joggesko">
                         <a href="#">Fila</a>
                         <a href="#"><h3>Orbit - joggesko - white</h3></a>
                         <p>499 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="Fila orbit joggesko">
                         <a href="#">Fila</a>
                         <a href="#"><h3>Orbit - joggesko - white</h3></a>
                         <p>499 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="Fila orbit joggesko">
                         <a href="#">Fila</a>
                         <a href="#"><h3>Orbit - joggesko - white</h3></a>
                         <p>499 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="Fila orbit joggesko">
                         <a href="#">Fila</a>
                         <a href="#"><h3>Orbit - joggesko - white</h3></a>
                         <p>499 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="Fila orbit joggesko">
                         <a href="#">Fila</a>
                         <a href="#"><h3>Orbit - joggesko - white</h3></a>
                         <p>499 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="Fila orbit joggesko">
                         <a href="#">Fila</a>
                         <a href="#"><h3>Orbit - joggesko - white</h3></a>
                         <p>499 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="Fila orbit joggesko">
                         <a href="#">Fila</a>
                         <a href="#"><h3>Orbit - joggesko - white</h3></a>
                         <p>499 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="Fila orbit joggesko">
                         <a href="#">Fila</a>
                         <a href="#"><h3>Orbit - joggesko - white</h3></a>
@@ -142,5 +143,6 @@
         <footer>
             Zalando Light 2024
         </footer>
+    </div>
     </body>
 </html>
