@@ -1,0 +1,15 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'base' as *;
+
+body{
+    background-color: $white;
+    font-family: $sekunderFont;
+}
+.welcome-banner{
+    position: relative;
+
+    
+}
+
+
